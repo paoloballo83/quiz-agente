@@ -124,14 +124,35 @@ body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);m
 
 <div id="api-screen">
   <div class="api-box">
-    <h2>Inserisci la chiave API</h2>
-    <p>Il bot usa Claude per generare spiegazioni con riferimenti normativi per ogni domanda.<br><br>
-    Crea una chiave su <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a>
-    &rarr; <strong>API Keys &rarr; Create Key</strong>.</p>
+    <h2>Quiz Agente Immobiliare</h2>
+    <p style="font-size:15px;color:var(--ink);margin-bottom:6px">Camera di Commercio &mdash; Regione Marche</p>
+    <p>1142 domande ufficiali con spiegazioni AI e riferimenti normativi.</p>
+
+    <div style="background:var(--paper);border-radius:10px;padding:16px 18px;margin:16px 0;text-align:left">
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin-bottom:10px">&#128272; Come ottenere la tua chiave API:</div>
+      <div style="font-size:13px;color:var(--ink2);line-height:2.2">
+        <b>1.</b> Vai su <a href="https://console.anthropic.com" target="_blank" style="color:var(--accent);font-weight:600">console.anthropic.com</a> e registrati gratis<br>
+        <b>2.</b> Clicca <b>API Keys</b> nel menu a sinistra<br>
+        <b>3.</b> Clicca <b>Create Key</b>, dai un nome e copia la chiave<br>
+        <b>4.</b> Vai su <b>Billing</b> e ricarica almeno <b>&euro;5</b><br>
+        <b>5.</b> Incolla la chiave qui sotto e inizia a studiare!
+      </div>
+    </div>
+
+    <div style="background:var(--green-bg);border-radius:8px;padding:10px 14px;margin-bottom:10px;text-align:left;font-size:12px;color:var(--green)">
+      &#9989; Ogni spiegazione costa circa <b>0,002&euro;</b> &mdash; con &euro;5 hai oltre <b>2.000 spiegazioni</b>
+    </div>
+
+    <div style="background:#fff8f0;border-radius:8px;padding:10px 14px;margin-bottom:16px;text-align:left;font-size:12px;color:#8a4a00">
+      &#128274; <b>La chiave rimane solo nel tuo browser.</b> Non viene mai condivisa con altri. Ogni utente usa la propria chiave e paga solo per le proprie spiegazioni.
+    </div>
+
     <input class="api-input" id="api-input" type="password" placeholder="sk-ant-api03-..." autocomplete="off" />
     <div class="api-error" id="api-error">Chiave non valida. Deve iniziare con sk-ant-</div>
     <button class="btn-start" id="btn-start">Inizia il quiz &rarr;</button>
-    <div class="api-note">&#128274; La chiave viene salvata solo nel tuo browser e non viene trasmessa ad altri server.</div>
+    <div class="api-note" style="margin-top:14px;font-size:12px;color:var(--ink3)">
+      Hai gi&agrave; la chiave? Incollala sopra e clicca Inizia. I tuoi progressi vengono salvati automaticamente nel browser.
+    </div>
   </div>
 </div>
 
